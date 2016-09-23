@@ -1,0 +1,100 @@
+let run f x = dac $ midi $ onMsg f $ x
+let run f x = dac $ midi $ onMsg f x
+let run f = dac $ midi $ onMsg f
+:m +Csound.Base Csound.Sam Csound.Patch 
+:t at
+:t mapSig
+dac $ mapSig (mlp (linseg [1500, 5, 250]) 0.1) $ white
+dac $ at (mlp (linseg [1500, 5, 250]) 0.1) $ white
+dac $ at (mlp (linseg [1500, 5, 250]) 0.1) $ white
+:t mapSig
+:t at
+:t readRef 
+:t writeRef 
+:t uon
+:t on
+dac $ fmap (mlp (on 50 2500 $ tri 0.2) 0.3) $ pink
+dac $ takeSnd 1 $ leg 1 2 0 0 * osc 220
+dac $ repeatSnd 1 $ leg 1 2 0 0 * osc 220
+dac $ repeatSnd 3 $ leg 1 2 0 0 * osc 220
+dac $ repeatSnd 3 $ leg 1 2 0 0 * osc 220
+dac $ midi $ onMsg $ \x-> fadeIn 0.05 * fadeOut 1 * saw x
+dac $ midi $ onMsg $ \x-> fadeIn 0.5 * fadeOut 1 * saw x
+dac $ atMidi $ \x-> fadeIn 0.5 * fadeOut 1 * saw x
+dac $ atMidi $ \x-> fadeIn 0.5 * fwdeOut 1 * saw x
+:b Patch
+:g Patch
+:t onMsg
+:t midi
+:t atMidi
+dac $ midi $ onMsg $ \x->dreamPad x
+dac $ midi $ onMsg \x->dreamPad x
+dac $ midi onMsg \x->dreamPad x
+dac $ atMidi dreamPad
+dac $ atMidi testDrone 220
+dac $ atMidi testDrone
+dac $ atMidi $ \x-> saw $x+150*leg 2 2 0.5 1
+dac $ return $ atMidi $ \x->x+150*leg 2 2 0.5 1
+dac $ atMidi $ return $ \x->x+150*leg 2 2 0.5 1
+dac $ atMidi $ \x->x+150*leg 2 2 0.5 1
+dac $ atMidi $ saw.(+(150*leg 2 2 0.5 1))
+dac $ midi $ onMsg $ \x -> saw $ x + 150 * leg 2 2 0.5 1
+:m +Csound.Base Csound.Sam Csound.Patch 
+:m +Csound.Base +Csound.Sam +Csound.Patch 
+:m +Csound.Base Csound.Sam Csound.Patch 
+:m +Csound.Base Csound.Sam Csound.Patch 
+:m +Csound.Base +Csound.Sam +Csound.Patch 
+:m +Csound.Base +Csound.Sam +Cso
+dac $ midi $ onMsg $ \x 
+dac $ saw $ 50+130* leg 2 2 0.5 1
+dac $ tri $ 220 + 100* osc 0.5
+dac $ tri 220
+dac $ setDur 2 $ tri 220
+dac $ tri 220
+dac $ sum $ [atMidi noiz, return $ loopWav 1 "drums1.wav"]
+dac $ sum $ [atMidi dreamPad, return $ loopWav 1 "drums1.wav"]
+:t return $ loopWav 1 "drums1.wav"
+:t atMidi dreamPad
+:t loopWav 1 "drums1.wav"
+dac $ sum $ [atMidi dreamPad, loopWav 1 "drums1.wav"]
+dac $ loopWav 1 "drums1.wav"
+sample 4 "drums1.wav" pattern 
+dac $ loopWav 1 "drums1.wav"
+sample 2 "drums1.wav" pattern 
+let sample dur file = writeSnd file . fmap (setDur dur) 
+dac $ loopWav 1 "drums1.wav"
+sample "drums1.wav" pattern 
+dac pattern 
+let pattern = mul 0.5 $ sum [bdpat, mul 0.5 chhpat, snpat]
+let sample file = writeSnd file . fmap (setDur 1) 
+dac $ mul 0.5 $ sum [bdpat, mul 0.5 chhpat, snpat]
+dac $ mul 0.6 $ sum [bdpat, mul 0.5 chhpat, snpat]
+dac $ mul 0.7 $ sum [bdpat, mul 0.5 chhpat, snpat]
+dac $ sum [bdpat, mul 0.5 chhpat, snpat]
+let snpat = str 0.125 $ del 0.5 $ pat [1] sn
+dac $ sum [bdpat, mul 0.5 chhpat, snpat]
+let snpat = str 0.25 $ del 0.5 $ pat [1] sn
+dac $ sum [bdpat, mul 0.5 chhpat]
+dac $ sum [bdpat, mul 0.7 chhpat]
+dac $ sum [bdpat, muk 0.7 chhpat]
+dac $ sum [bdpat, muk 0.7 chhpat]
+dac $ sum [bdpat, chhpat]
+let bdpat = str 0.25 $ pat [1] bd2
+let = str 0.25 $ pat [1] bd2
+dac $ str 0.25 $ pat [1] bd2
+dac $ pat [1] bd2
+dac bd2
+dac $ bd2' bdSpec
+dac $ bd2' bdSpec2
+dac $ bd' bdSpec2
+dac $ bd' bdSpec
+dac bd'
+dac bd2
+dac bd2
+let chhpat = str 1 $ pat' [1, 0.5, 0.2, 0.1] [1,2,3] chh
+dac $ str 1 $ pat' [1, 0.5, 0.2, 0.1] [1,2,3] chh
+dac $ str 1 $ pat' [1, 0.5, 0.2, 0.1] [1,2] chh
+dac $ str 1 $ pat' [1, 0.5, 0.2, 0.1] [1,1] chh
+dac $ str 1 $ pat' [1, 0.5, 0.2, 0.1] [1] chh
+dac $ str 0.25 $ pat' [1, 0.5, 0.2, 0.1] [0.5] chh
+dac $ str 1 $ pat' [1, 0.5, 0.2, 0.1] [0.5] chh

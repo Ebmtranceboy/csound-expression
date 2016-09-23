@@ -1,0 +1,370 @@
+
+package: Boolean-0.2.3
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: colour-2.3.3
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-expression-5.0.1
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 temporal-media-0.6.1
+              process-1.2.3.0 data-default-0.7.1.1
+              csound-expression-typed-0.0.9.3 csound-expression-opcodes-0.0.3.1
+              csound-expression-dynamic-0.1.6 containers-0.5.6.2 colour-2.3.3
+              base-4.8.2.0 Boolean-0.2.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-expression-dynamic-0.1.6
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: wl-pprint-1.2 transformers-0.4.2.0 hashable-1.2.4.0
+              data-fix-cse-0.0.2 data-fix-0.0.3 data-default-0.7.1.1
+              containers-0.5.6.2 base-4.8.2.0 array-0.5.1.0 Boolean-0.2.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-expression-opcodes-0.0.3.1
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 csound-expression-typed-0.0.9.3
+              csound-expression-dynamic-0.1.6 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-expression-typed-0.0.9.3
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: wl-pprint-1.2 transformers-0.4.2.0
+              temporal-media-0.6.1 hashable-1.2.4.0 ghc-prim-0.4.0.0
+              deepseq-1.4.1.1 data-default-0.7.1.1
+              csound-expression-dynamic-0.1.6 containers-0.5.6.2 colour-2.3.3
+              base-4.8.2.0 Boolean-0.2.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-default-0.7.1.1
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: data-default-instances-old-locale-0.0.1
+              data-default-instances-dlist-0.0.1
+              data-default-instances-containers-0.0.1 data-default-class-0.1.2.0
+              base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-default-class-0.1.2.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-default-instances-containers-0.0.1
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: data-default-class-0.1.2.0 containers-0.5.6.2
+              base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-default-instances-dlist-0.0.1
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: dlist-0.8.0.2 data-default-class-0.1.2.0 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-default-instances-old-locale-0.0.1
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: old-locale-1.0.0.7 data-default-class-0.1.2.0
+              base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-fix-0.0.3
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: data-fix-cse-0.0.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 data-fix-0.0.3
+              containers-0.5.6.2 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: dlist-0.8.0.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: deepseq-1.4.1.1 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: hashable-1.2.4.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: -sse41 sse2 integer-gmp
+dependencies: text-1.2.2.1 integer-gmp-1.0.0.0 ghc-prim-0.4.0.0
+              bytestring-0.10.6.0 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: old-locale-1.0.0.7
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: temporal-media-0.6.1
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0 Boolean-0.2.3
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: text-1.2.2.1
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: -integer-simple -developer
+dependencies: integer-gmp-1.0.0.0 ghc-prim-0.4.0.0 deepseq-1.4.1.1
+              bytestring-0.10.6.0 binary-0.7.5.0 base-4.8.2.0 array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: wl-pprint-1.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-sampler-0.0.6.5
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 csound-expression-5.0.1
+              base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: sharc-timbre-0.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: sharc-timbre-0.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: sharc-timbre-0.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: sharc-timbre-0.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: sharc-timbre-0.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: sharc-timbre-0.2
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-catalog-0.5.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 sharc-timbre-0.2
+              csound-sampler-0.0.6.5 csound-expression-5.0.1 base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-catalog-0.5.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 sharc-timbre-0.2
+              csound-sampler-0.0.6.5 csound-expression-5.0.1 base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-catalog-0.5.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 sharc-timbre-0.2
+              csound-sampler-0.0.6.5 csound-expression-5.0.1 base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-catalog-0.5.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 sharc-timbre-0.2
+              csound-sampler-0.0.6.5 csound-expression-5.0.1 base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-catalog-0.5.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 sharc-timbre-0.2
+              csound-sampler-0.0.6.5 csound-expression-5.0.1 base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-catalog-0.5.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 sharc-timbre-0.2
+              csound-sampler-0.0.6.5 csound-expression-5.0.1 base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-catalog-0.5.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 sharc-timbre-0.2
+              csound-sampler-0.0.6.5 csound-expression-5.0.1 base-4.8.2.0
+install-outcome: BuildFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: csound-catalog-0.5.0
+os: linux
+arch: arm
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 sharc-timbre-0.2
+              csound-sampler-0.0.6.5 csound-expression-5.0.1 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
