@@ -73,8 +73,11 @@ formLhs ports types = fmap (Seq.zipWith Var types) (getPorts ports)
         (ids, lastPortOrder) = runState (mapM (fillMissingPorts lastFreshId) ps') 0
         freshIdForTail = 1 + lastFreshId + inUsePortsSize
         tailIds = fmap (+ freshIdForTail) $ Seq.fromList [0 .. outputArity - 1 - lastPortOrder]
+        allIds = join ids <> tailIds
+        -- next free id should be above all previous assigned ones
+        nextFreeId = maximum (lastFreshId : fmap (+ 1) (toList allIds))
        in
-        (join ids <> tailIds, lastFreshId + outputArity - inUsePortsSize)
+        (allIds, nextFreeId)
 
     outputArity = length types
     inUsePortsSize = length ports
